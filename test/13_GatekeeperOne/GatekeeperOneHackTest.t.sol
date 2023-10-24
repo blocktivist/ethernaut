@@ -10,10 +10,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "forge-std/Test.sol";
-import "forge-std/console.sol";
-import "../../src/13_GatekeeperOne/GatekeeperOne.sol";
-import "../../src/13_GatekeeperOne/GatekeeperOneHack.sol";
+import {Test, console} from "forge-std/Test.sol";
+import {GatekeeperOne} from "../../src/13_GatekeeperOne/GatekeeperOne.sol";
+import {GatekeeperOneHack} from "../../src/13_GatekeeperOne/GatekeeperOneHack.sol";
 
 error TestFailed();
 
