@@ -23,7 +23,7 @@ All contracts can be compiled in [Remix IDE](https://remix.ethereum.org/) and ge
 
 Level 13 requires a test conducted in [Foundry](https://getfoundry.sh/).
 
-Note: this repository uses [OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) version 4.9.3, so some contracts will not compile in [Remix IDE](https://remix.ethereum.org/) with a newer version. A qick fix is to copy the `lib/openzeppelin-contracts/contracts` folder from this repository into [Remix IDE](https://remix.ethereum.org/).
+Note: this repository uses [OpenZeppelin contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) version 4.9.3, so some contracts will not compile in [Remix IDE](https://remix.ethereum.org/) with a newer version. A qick fix is to copy the `lib/openzeppelin-contracts/contracts` folder from this repository into [Remix IDE](https://remix.ethereum.org/).
 
 ## Credits
 
