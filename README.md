@@ -1,66 +1,30 @@
-## Foundry
+# Ethernaut Solutions
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This repository contains a collection of smart contracts designed to beat the [Ethernaut](https://ethernaut.openzeppelin.com/) wargame by [OpenZeppelin](https://github.com/OpenZeppelin/ethernaut).
 
-Foundry consists of:
+## Requirements
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git): run `git --version` to check installation
+- [Foundry](https://getfoundry.sh/): run `foundry --version` to check installation
 
-## Documentation
+## Installation
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+```
+git clone https://github.com/blocktivist/ethernaut
+cd ethernaut
+forge build
 ```
 
-### Test
+## Instructions
 
-```shell
-$ forge test
-```
+After creating a new contract instance on [Ethernaut](https://ethernaut.openzeppelin.com/), run `contract.address` in the website console to get `address _target`.
 
-### Format
+All contracts can be compiled in [Remix IDE](https://remix.ethereum.org/) and get called or deployed at `address _target`. However, level 25 is an exception to this, see the comments.
 
-```shell
-$ forge fmt
-```
+Level 13 requires a test conducted in [Foundry](https://getfoundry.sh/).
 
-### Gas Snapshots
+Note: this repository uses [OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) version 4.9.3, so some contracts will not compile in [Remix IDE](https://remix.ethereum.org/) with a newer version. A qick fix is to copy the `lib/openzeppelin-contracts/contracts` folder from this repository into [Remix IDE](https://remix.ethereum.org/).
 
-```shell
-$ forge snapshot
-```
+## Credits
 
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+A big shoutout to [@t4sk](https://github.com/t4sk) and their [YouTube series](https://www.youtube.com/playlist?list=PLO5VPQH6OWdWh5ehvlkFX-H3gRObKvSL6) for providing a guide. Check it out for detailed walkthroughs!
