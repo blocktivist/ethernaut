@@ -1,6 +1,6 @@
 # Ethernaut Solutions
 
-This repository contains a collection of smart contracts designed to beat the [Ethernaut](https://ethernaut.openzeppelin.com/) wargame by [OpenZeppelin](https://github.com/OpenZeppelin/ethernaut).
+This repository contains a collection of smart contracts designed to beat the [Ethernaut](https://ethernaut.openzeppelin.com/) CTF game by [OpenZeppelin](https://github.com/OpenZeppelin/ethernaut).
 
 ## Requirements
 
@@ -17,7 +17,7 @@ forge build
 
 ## Instructions
 
-After creating a new contract instance on [Ethernaut](https://ethernaut.openzeppelin.com/), run `contract.address` in the website console to get `address _target`.
+After creating a new level contract instance on [Ethernaut](https://ethernaut.openzeppelin.com/), run `contract.address` in the website console to get `address _target`.
 
 All contracts can be compiled in [Remix IDE](https://remix.ethereum.org/) and get called or deployed at `address _target`. However, level 25 is an exception to this, see the comments.
 
