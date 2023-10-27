@@ -1,6 +1,6 @@
 /**
  * How to run this test:
- * 1) Comment out line 25 and uncomment line 26
+ * 1) Comment out line 24 and uncomment line 25
  * 2) Replace `instance contract address` with the Ethernaut instance contract address
  * 3) In Foundry, get a Sepolia RPC URL and save it in an .env file
  * 4) In Foundry, run `source .env`
