@@ -16,6 +16,32 @@ forge install
 forge build
 ```
 
+## Instructions
+
+To add a Sepolia RPC URL, run:
+
+```
+cp .env.example .env
+# add Sepolia RPC URL
+source .env
+```
+
+To add a private key, run:
+
+```
+cast wallet import sepoliaKey --interactive
+```
+
+For each challenge, deploy a new instance through the browser using the same private key.
+
+To fetch the `instanceAddress` from the console, run
+
+```
+contract.address
+```
+
+Follow the instructions in the `src` directory. Finally, submit the instance through the browser to solve the challenge.
+
 ## Credits
 
 Credits go to [@t4sk](https://github.com/t4sk) and their [YouTube series](https://www.youtube.com/playlist?list=PLO5VPQH6OWdWh5ehvlkFX-H3gRObKvSL6) for providing a guide on how to solve the challenges. Follow them on
