@@ -1,13 +1,12 @@
 # Vault Solution
 
-Retrieve the `password`:
+1) Retrieve the `password`:
 
 ```
 cast storage `ìnstanceAddress` 0x1 --rpc-url $SEPOLIA_RPC_URL
 ```
 
-
-Call the  `unlock()` function:
+2) Call `unlock()`:
 
 ```
 cast send `ìnstanceAddress` "unlock(bytes32)" `password` --rpc-url $SEPOLIA_RPC_URL --account sepoliaKey
