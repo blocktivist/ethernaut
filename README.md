@@ -9,6 +9,8 @@ This repository contains the smart contracts designed to beat the [Ethernaut](ht
 
 ## Setup
 
+To clone the repository and install the dependencies, run:
+
 ```
 git clone https://github.com/blocktivist/ethernaut
 cd ethernaut
@@ -32,15 +34,15 @@ To add a private key, run:
 cast wallet import sepoliaKey --interactive
 ```
 
-For each challenge, deploy a new instance through the browser using the same private key.
+For each challenge, deploy a new instance through the browser using the `sepoliaKey`.
 
-To fetch the `instanceAddress` from the console, run
+To fetch the `instanceAddress` from the console, run:
 
 ```
 contract.address
 ```
 
-Follow the instructions in the `src` directory. Finally, submit the instance through the browser to solve the challenge.
+Follow the instructions in the `Solution.md` file. Finally, submit the instance through the browser to solve the challenge.
 
 ## Credits
 
